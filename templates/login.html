@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두리쥬아</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/layout_base.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+
+    <!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 쿠키 사용을 위한 Jquery-cookie 임포트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+    
+      function login() {
+        $.ajax({
+          type: "POST",
+          url: "/api/login",
+          data: { id_give: $('#userid').val(), pw_give: $('#userpw').val() },
+          success: function (response) {
+            if (response['result'] == 'success') {
+              $.cookie('mytoken', response['token']);
+
+
+              alert('로그인 완료!')
+              window.location.href = '/'
+            } else {
+              alert(response['msg'])
+            }
+          }
+        })
+      }
+
+    
+
+
+    </script>
+
+</head>
+
+<body>
+
+  <ul class="skipnavi">
+    <li><a href="#container">본문내용</a></li>
+</ul>
+<!-- wrap 시작 -->
+<div id="wrap">
+  <header id="header">
+    <div class="header_area box_inner clear">
+        <h1><a href="/">두리쥬아</a></h1>
+        <p class="openMOgnb"><a href="#"><b class="hdd">메뉴열기</b><span></span><span></span><span></span></a></p>
+        <!-- header_cont -->
+        <div class="header_cont">
+            <ul class="util clear">
+                <li><a href="/login">로그인</a></li>
+                <li><a href="/register">회원가입</a></li>
+            </ul>
+            <nav>
+                <a href="/" ><img src="/static/images/logo2.png"  alt="두리쥬아"></a> 
+                <ul class="gnb clear" >
+                    <li><a href="/food" class="openAll1">맛집</a></li>
+                    <li><a href="/cafe" class="openAll2">카페</a></li>
+                    <li><a href="/play" class="openAll3">놀거리</a></li>
+                    <li><a href="/shop" class="openAll4">쇼핑</a></li>
+                    <li><a href="/pick" class="openAll4">두리쥬아 PICK 코스 </a></li>
+                    <li><a href="/board" class="openAll4">게시판</a></li>
+                </ul>
+            </nav>
+            <p class="closePop"><a href="#">닫기</a></p>
+        </div>
+    </div>
+</header>
+
+      <div class="find">
+        <div class="container" style="padding-top: 100px; padding-bottom : 50px; padding-left:100px;" >
+          <img src="/static/images/logo.png"  alt="두리쥬아" width="500" height="100"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+        </div>
+
+        <p style="padding-left:100px;"><input type="text" id="userid" size="50" placeholder="아이디" maxlength="20" style="width: 500px; height:70px;">
+        </p>
+        <p style="padding-left:100px;"><input type="password" id="userpw" size="50" placeholder="비밀번호" maxlength="15"
+            style="width: 500px; height:70px;"></p>
+        
+          <p style="padding-left:100px;">
+            <a href="/"><input type="button" value="로그인" 
+            style="border: 2px solid #E68797; background-color: #ffffff; width: 250px; height:70px; color: black;"
+            onclick="login()">
+            <a href="/register"><input type="button" value="회원가입" 
+            style="border: 2px solid #E68797; background-color: #ffffff; width: 250px;  height:70px; color: black;">
+            </a> 
+
+        
+          
+          </p><br>
+
+        <hr class="featurette-divider">
+      </div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두리쥬아</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/layout_base.css">
+    
+    <style>
+        .tabs_title {height: 100px; width: 36%; float: center;
+            margin-top: 50px; }
+
+        #title {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+              }
+
+        #age {  background-color: #ceb1cc; color: white; 
+          border: 2px gray solid; color: white; padding: 15px 30px; text-align: center; 
+          text-decoration: none;  font-size: 20px; margin: 4px 2px; cursor: pointer;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          
+          float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+<ul class="skipnavi">
+    <li><a href="#container">본문내용</a></li>
+</ul>
+<!-- wrap 시작 -->
+<div id="wrap">
+    <header id="header">
+        <div class="header_area box_inner clear">
+            <h1><a href="/">두리쥬아</a></h1>
+            <p class="openMOgnb"><a href="#"><b class="hdd">메뉴열기</b><span></span><span></span><span></span></a></p>
+            <!-- header_cont -->
+            <div class="header_cont">
+                <ul class="util clear">
+                    <li><a href="/login">로그인</a></li>
+                    <li><a href="/register">회원가입</a></li>
+                </ul>
+                <nav>
+                    <a href="/" ><img src="/static/images/logo2.png"  alt="두리쥬아"></a> 
+                    <ul class="gnb clear" >
+                        <li><a href="/food" class="openAll1">맛집</a></li>
+                        <li><a href="/cafe" class="openAll2">카페</a></li>
+                        <li><a href="/play" class="openAll3">놀거리</a></li>
+                        <li><a href="/shop" class="openAll4">쇼핑</a></li>
+                        <li><a href="/pick" class="openAll4">두리쥬아 PICK 코스 </a></li>
+                        <li><a href="/board" class="openAll4">게시판</a></li>
+                    </ul>
+                </nav>
+                <p class="closePop"><a href="#">닫기</a></p>
+            </div>
+        </div>
+    </header>
+    </div>
+
+
+    <div class="tabs">
+
+        <h4 style="font-size: 35px; margin-left: 500px; background-color: #ceb1cc; height: 40px; width: 36%; font-weight: 500;
+         margin-top: 200px; text-align: center; color: #ffffff;">
+           두리쥬아 PICK 데이트 추천 코스 </h4>
+           
+           <div class="tabs_title" style="color: white;"> 
+            <ul>
+              <li><a href="#ten"><input type="button" value="10대" id="age"> </a></li>
+              <li><a href="#twenty"><input type="button" value="20대" id="age"></a></li>
+              <li><a href="#thirty"><input type="button" value="30대" id="age"></a></li>
+                   
+            </ul>
+
+        </div>
+
+            <div class="tab_content">
+
+              <div id="ten" >
+                <div class="about_area">
+                    <h2 style=" font-size: 20px; font-weight: bold; margin-right: 600px; " > 1DAY 두리쥬아 PICK 10대 데이트 코스 추천 </h2>
+                        <div class="about_box">
+                            <ul class="place_list box_inner clear">
+                                <li><a href="https://m.place.naver.com/restaurant/1484746710/photo?entry=ple"><img class="img_topplace" src="/static/images/command/five.jpg" alt="롤링파스타"></a><h3>롤링파스타</h3><p class="txt">10대들을 위한 저렴한 파스타/피자 맛집</p></li>
+                                <li><a href="https://m.place.naver.com/place/1280801575/photo?entry=ple"><img class="img_topplace" src="/static/images/command/seven.jpg" alt="인생사진"></a><h3>인생사진</h3><p class="txt">추억을 위한 사진 찰칵</p></li>
+                                <li><a href="https://m.place.naver.com/restaurant/1830580343/photo"><img class="img_topplace" src="/static/images/command/eight.jpg" alt="카페초안"></a><h3>카페초안</h3><p class="txt">수원역에서 유명한 핫한 카페~!</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="about_box">
+                          <ul class="place_list box_inner clear">
+                              <li><a href="https://m.place.naver.com/restaurant/1484746710/photo?entry=ple"><img class="img_topplace" src="/static/images/song/song2.jpg" alt="피자네버슬립스"></a><h3>피자네버슬립스</h3><p class="txt">10대들을 위한 저렴한 피자 맛집</p></li>
+                              <li><a href="https://m.place.naver.com/place/1280801575/photo?entry=ple"><img class="img_topplace" src="/static/images/draw.jpg" alt="그림제작소"></a><h3>그림제작소</h3><p class="txt">오랜만에 붓들고 그림 어떤가요?</p></li>
+                              <li><a href="https://m.place.naver.com/restaurant/1830580343/photo"><img class="img_topplace" src="/static/images/song/song3.jpg" alt="라라브레드"></a><h3>라라브레드</h3><p class="txt">피자먹고 그림 그렸으면 후식으로 빵이죠!</p></li>
+                          </ul>
+                      </div>
+                    </div>
+              </div> 
+              
+              <div id="twenty">
+                <div class="about_area">
+                    <h2 style="font-size: 20px; font-weight: bold; margin-right: 600px;" > 1DAY 두리쥬아 PICK 20대 추천 </h2>
+                        <div class="about_box">
+                            <ul class="place_list box_inner clear">
+                                <li><a href="https://m.place.naver.com/restaurant/1390268471/home?entry=pll"><img class="img_topplace" src="/static/images/command/one.jpg" alt="엘루이 비스트로"></a><h3>엘루이 비스트로</h3><p class="txt">건대 칵테일바!!</p></li>
+                                <li><a href="https://m.place.naver.com/place/37768977/photo?entry=ple"><img class="img_topplace" src="/static/images/command/three.jpg" alt="놀숲"></a><h3>건대 만화책방~!~!</p></li>
+                                <li><a href="https://m.place.naver.com/place/12881596/photo"><img class="img_topplace" src="/static/images/command/four.jpg" alt="한아름 볼링장"></a><h3>한아름 볼링장</h3><p class="txt">건대 볼링장~!!~</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="about_box">
+                          <ul class="place_list box_inner clear">
+                              <li><a href="https://m.place.naver.com/restaurant/1390268471/home?entry=pll"><img class="img_topplace" src="/static/images/kung/kung9.jpg" alt="초승달"></a><h3>초승달</h3><p class="txt">맛있는 점심은 초승달!</p></li>
+                              <li><a href="https://m.place.naver.com/place/37768977/photo?entry=ple"><img class="img_topplace" src="/static/images/kung/kung3.jpg" alt="남산 서울타워"></a><h3>남산 서울 타워<p class="txt">남산타워에서 자물쇠도 걸고 공기도 마시고~ 일석이조!</p></li>
+                              <li><a href="https://m.place.naver.com/place/12881596/photo"><img class="img_topplace" src="/static/images/kung/kung5.jpg" alt="루프탑 9room"></a><h3>루프탑 9room</h3><p class="txt">이태원 루프탑에서 야경보면서 한잔 어떤가요~</p></li>
+                          </ul>
+                      </div>
+                    </div>
+              </div>
+
+
+              <div id="thirty">
+                <div class="about_area">
+                    <h2 style="font-size: 20px; font-weight: bold; margin-right: 600px;" > 두리쥬아 PICK 30대 추천 </h2>
+                        <div class="about_box">
+                            <ul class="place_list box_inner clear">
+                                <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%9D%BC%EB%9D%BC%EB%B8%8C%EB%A0%88%EB%93%9C&oquery=%EB%A7%88%EC%B9%B4%EB%A1%B1+%EB%A7%9B%EC%A7%91&tqi=U0%2FzHwprvh8ssKveWnwssssstmR-292344"><img class="img_topplace" src="/static/images/command/wine.jpg" alt="베라짜노"></a><h3>베라짜노</h3><p class="txt">위치 : 서울 강남구 도산대로57길 13-2 <br>시간: 매일 10:00 - 22:00 <br>샵과 다이닝을 한꺼번에 즐기는 와인나라 청담점!</p></li>
+                                <li><a href="https://map.naver.com/v5/entry/place/755444728?c=14149926.5844716,4509548.1584453,15,0,0,0,dh&placePath=%3Fentry=plt"><img class="img_topplace" src="/static/images/command/nine.jpg" alt="울프강스테이크하우스"></a><h3>울프강스테이크하우스</h3><p class="txt">위치: 울프강스테이크하우스 <br>시간: 매일 11:00 - 23:00<br> 청담동 스테이크 맛있는 집~ </p></li>
+                                <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%B2%9C%EC%82%AC%EA%B3%B1%EC%B0%BD&oquery=%ED%94%BC%EC%B9%98%EA%B7%B8%EB%A0%88%EC%9D%B4&tqi=U0%2FJXwp0J1sssusI4usssssst6h-420841"><img class="img_topplace" src="/static/images/night/night10.png" alt="석촌호수"></a><h3>석촌호수</h3><p class="txt">위치: 송파구 석촌호수 <br> 밥먹고 밥에 강가를 보면서 산책하기 딱 좋은 장소!</p></li>
+                                <p><a href="#"  style="color:#000; font-size: 25px;  margin-top: 70px; float: right;" > More view </a></p>
+                            </ul>
+                        </div>
+
+                        <div class="about_box">
+                          <ul class="place_list box_inner clear">
+                              <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%9D%BC%EB%9D%BC%EB%B8%8C%EB%A0%88%EB%93%9C&oquery=%EB%A7%88%EC%B9%B4%EB%A1%B1+%EB%A7%9B%EC%A7%91&tqi=U0%2FzHwprvh8ssKveWnwssssstmR-292344"><img class="img_topplace" src="/static/images/command/ten.jpg" alt="러스티"></a><h3>러스티</h3><p class="txt">위치 : 서울 강남구 선릉로158길 14-1 <br>시간: 매일 10:00 - 22:00 <br> 청담동 분위기 있는 맛집~</p></li>
+                              <li><a href="https://map.naver.com/v5/entry/place/755444728?c=14149926.5844716,4509548.1584453,15,0,0,0,dh&placePath=%3Fentry=plt"><img class="img_topplace" src="/static/images/songpagu/peachgray.jpg" alt="피치그레이"></a><h3>피치그레이</h3><p class="txt">위치: 서울 송파구 가락로21길 14-1 <br>시간: 매일 11:00 - 21:00<br> 커피마시면서 수채화를 그리는 인기만점 카페! </p></li>
+                              <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%B2%9C%EC%82%AC%EA%B3%B1%EC%B0%BD&oquery=%ED%94%BC%EC%B9%98%EA%B7%B8%EB%A0%88%EC%9D%B4&tqi=U0%2FJXwp0J1sssusI4usssssst6h-420841"><img class="img_topplace" src="/static/images/songpagu/gochung.jpg" alt="천사곱창"></a><h3>천사곱창</h3><p class="txt">위치: 강서구, 마포, 김포, 관악 등 <br> 시간 : 15:30 - 02:30<br> 프렌차이점 소곱창집으로 예전부터 지금까지 쭉- 인기있는 곱창집!</p></li>
+                              <p><a href="#"  style="color:#000; font-size: 25px;  margin-top: 70px; float: right;" > More view </a></p>
+                          </ul>
+                      </div>
+                    </div>
+              </div>
+
+            </div>
+          </div>
+
+          <script>
+            function createTabs(selector) {
+              const el = document.querySelector(selector);
+              const liEls = el.querySelectorAll('ul li');
+              const tabContentEl = el.querySelector('.tab_content');
+              const firstTabEl = liEls.item(0).firstElementChild
+            
+              function activate(target) {
+                const hash = target.hash;
+                const anchors =
+                  target.closest('ul').querySelectorAll('li a');
+                
+                Array.from(anchors)
+                  .forEach(v => v.className = '');  
+                Array.from(tabContentEl.children)
+                  .forEach(v => v.style.display = 'none');
+                tabContentEl.querySelector(hash).style.display = '';
+                target.className = 'active';
+              }
+            
+              const handleHash = () => {
+                if (location.hash) {
+                  const selector = `a[href="${location.hash}"]`;
+                  activate(document.querySelector(selector));
+                } else {
+                  activate(firstTabEl);
+                }
+              }
+            
+              window.addEventListener('hashchange', handleHash);
+              
+              handleHash();
+            }
+            
+            createTabs('.tabs');
+            </script>
+                               
+    </body>
+    </html>
